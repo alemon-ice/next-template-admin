@@ -1,10 +1,14 @@
+import Layout from 'components/templates/Layout'
+
 export default function Home() {
+  const layoutProps = {
+    title: 'Página Inicial',
+    subtitle: 'Estamos construindo um template admin'
+  }
+
   return (
-    <div className={`
-      flex justify-center items-center h-screen
-      bg-gradient-to-r from-green-500 to-blue-500
-    `}>
+    <Layout {...layoutProps}>
       <h1>Admin</h1>
-    </div>
+    </Layout>
   )
 }
